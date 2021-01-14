@@ -1,0 +1,22 @@
+{
+  "name": "glu-mad-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martijnkunstman/GLU-MAD-webapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martijnkunstman/GLU-MAD-webapp/issues"
+  },
+  "homepage": "https://github.com/martijnkunstman/GLU-MAD-webapp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
