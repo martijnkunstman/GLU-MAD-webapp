@@ -87,6 +87,133 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   video, #cssfilters-video, #screenshot-img {
+    width: 400px;
+    height: 300px;
+  }
+  video, #cssfilters-stream {
+    background: rgba(255,255,255,0.5);
+    border: 1px solid #ccc;
+  }
+  .blur {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+  }
+  .brightness {
+    -webkit-filter: brightness(5);
+    -moz-filter: brightness(5);
+    -o-filter: brightness(5);
+    -ms-filter: brightness(5);
+    filter: brightness(5);
+  }
+  .contrast {
+    -webkit-filter: contrast(8);
+    -moz-filter: contrast(8);
+    -o-filter: contrast(8);
+    -ms-filter: contrast(8);
+    filter: contrast(8);
+  }
+  .hue-rotate {
+    -webkit-filter: hue-rotate(90deg);
+    -moz-filter: hue-rotate(90deg);
+    -o-filter: hue-rotate(90deg);
+    -ms-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);
+  }
+  .hue-rotate2 {
+    -webkit-filter: hue-rotate(180deg);
+    -moz-filter: hue-rotate(180deg);
+    -o-filter: hue-rotate(180deg);
+    -ms-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+  }
+  .hue-rotate3 {
+    -webkit-filter: hue-rotate(270deg);
+    -moz-filter: hue-rotate(270deg);
+    -o-filter: hue-rotate(270deg);
+    -ms-filter: hue-rotate(270deg);
+    filter: hue-rotate(270deg);
+  }
+  .saturate {
+    -webkit-filter: saturate(10);
+    -moz-filter: saturate(10);
+    -o-filter: saturate(10);
+    -ms-filter: saturate(10);
+    filter: saturate(10);
+  }
+  .grayscale {
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+  .sepia {
+    -webkit-filter: sepia(1);
+    -moz-filter: sepia(1);
+    -o-filter: sepia(1);
+    -ms-filter: sepia(1);
+    filter: sepia(1);
+  }
+  .invert {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    -o-filter: invert(1);
+    -ms-filter: invert(1);
+    filter: invert(1);
+  }
+
+  main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main > div {
+    display: inline-block;
+    width: 3px;
+    height: 100px;
+    margin: 0 7px;
+    background: black;
+    transform: scaleY(0.5);
+    opacity: 0.25;
+  }
+  main.error {
+    color: #f7451d;
+    min-width: 20em;
+    max-width: 30em;
+    margin: 0 auto;
+    white-space: pre-line;
+  }
+
+  #audiobutton {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 5em;
+    height: 2em;
+    margin-left: -2.5em;
+    margin-top: -1em;
+    z-index: 100;
+    padding: 0.25em 0.5em;
+    color: #fff;
+    background: #000;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.15em;
+    font-weight: 200;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.5s;
+  }
+  button:hover {
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.75);
+  }
+  
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
